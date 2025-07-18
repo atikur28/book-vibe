@@ -17,12 +17,16 @@ const Navbar = () => {
   ];
   return (
     <div className="flex items-center justify-between px-3 lg:px-10 py-8">
-      <div className="flex items-center">
+      <div className="flex items-center gap-0.5 md:gap-3">
         <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+          <div
+            tabIndex={0}
+            role="button"
+            className="btn bg-white border-none shadow-none hover:bg-[#23BE0A] lg:hidden"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
+              className="h-5 w-5 text-black"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -60,7 +64,7 @@ const Navbar = () => {
         </div>
         <Link
           to="/"
-          className="font-bold text-2xl lg:text-3xl"
+          className="font-bold text-2xl lg:text-3xl hover:text-[#23BE0A] hover:scale-105 transition duration-200"
           style={{ fontFamily: "'Roboto', sans-serif" }}
         >
           Book Vibe
@@ -90,13 +94,13 @@ const Navbar = () => {
       >
         <Link
           to="/sign-in"
-          className="mr-3 px-3 md:px-5 py-1.5 md:py-3 text-sm md:text-base rounded-xl transition-colors duration-200 font-bold cursor-pointer bg-[#23BE0A] text-white"
+          className="mr-3 px-3 md:px-5 py-1.5 md:py-3 text-sm md:text-base rounded-xl transition-colors duration-200 font-bold cursor-pointer bg-[#23BE0A] hover:bg-[#1a9c08] text-white"
         >
           Sign In
         </Link>
         <Link
           to="/sign-up"
-          className="px-5 py-3 rounded-xl transition-colors duration-200 font-bold cursor-pointer bg-[#59C6D2] text-white hidden md:flex"
+          className="px-5 py-3 rounded-xl transition-colors duration-200 font-bold cursor-pointer bg-[#59C6D2] hover:bg-[#3bb3c1] text-white hidden md:flex"
         >
           Sign Up
         </Link>
