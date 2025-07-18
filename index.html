@@ -5,6 +5,37 @@
     <link rel="icon" type="image/svg+xml" href="./src/assets/book.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Book Vibe</title>
+
+    <!-- Adaptive to light/dark mode
+    <style>
+      html,
+      body {
+        background-color: white;
+        color: black;
+        transition: all 0.3s ease;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        html,
+        body {
+          background-color: #121212;
+          color: white;
+        }
+      }
+    </style> -->
+
+    <!-- Force light mode -->
+    <style>
+      :root {
+        color-scheme: light;
+      }
+
+      html,
+      body {
+        background-color: white;
+        color: black;
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>
